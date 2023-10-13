@@ -1,0 +1,9 @@
+sources:
+  - name: go_sample_data
+    database: data_sources
+    schema: public
+    tables:
+      - name: go_daily_sales
+      - name: go_methods
+      - name: go_products
+      - name: go_retailers
