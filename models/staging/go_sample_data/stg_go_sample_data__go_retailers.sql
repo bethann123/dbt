@@ -9,10 +9,10 @@ source as (
 renamed as (
 
     select
-        retailer code,
-        retailer name,
-        type,
-        country
+        retailer_code,
+        retailer_name,
+        retailer_type,
+        retailer_country
 
     from source
 

@@ -9,13 +9,13 @@ source as (
 renamed as (
 
     select
-        retailer code,
-        product number,
-        order method code,
-        date,
-        quantity,
-        unit price,
-        unit sale price
+        retailer_code,
+        product_number,
+        order_method_code,
+        sale_date,
+        sales_quantity,
+        unit_price,
+        unit_sale_price
 
     from source
 
