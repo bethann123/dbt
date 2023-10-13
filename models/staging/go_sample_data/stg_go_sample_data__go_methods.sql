@@ -9,8 +9,8 @@ source as (
 renamed as (
 
     select
-        order method code,
-        order method type
+        order_method_code,
+        order_method_type
 
     from source
 

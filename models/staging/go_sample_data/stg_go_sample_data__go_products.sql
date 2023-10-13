@@ -9,14 +9,14 @@ source as (
 renamed as (
 
     select
-        product number,
-        product line,
-        product type,
-        product,
-        product brand,
-        product color,
-        unit cost,
-        unit price
+        product_number,
+        product_line,
+        product_type,
+        product_name,
+        product_brand,
+        product_color,
+        unit_cost,
+        unit_price
 
     from source
 
