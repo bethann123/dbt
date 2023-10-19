@@ -7,3 +7,7 @@ sources:
       - name: go_methods
       - name: go_products
       - name: go_retailers
+        columns:
+          - name: retailer_name
+            meta:
+                masking_policy: mp_encrypt_pii

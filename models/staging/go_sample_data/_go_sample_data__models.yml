@@ -1,0 +1,8 @@
+models:
+  - name: stg_go_sample_data__go_retailers
+    description: Sales Retailers
+    columns:
+      - name: retailer_name
+        meta:
+          masking_policy: mp_encrypt_pii
+
