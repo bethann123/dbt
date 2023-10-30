@@ -34,4 +34,10 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   bootcamp_bavery_analytics:
       materialized: view
+      post-hook: 
+        - "{{ dbt_snow_mask.apply_masking_policy('models') }}"
 
+
+on-run-start:
+  - "{{ dbt_snow_mask.create_masking_policy('models')}}"
+  - "{{ dbt_snow_mask.create_masking_policy('sources')}}"
